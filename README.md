@@ -2,8 +2,6 @@
 
 A tvOS streaming catalog application built using SwiftUI, Swift Concurrency, MVVM, and Clean Architecture.
 
-This project was developed as part of the technical assessment for the iOS/tvOS Developer position at RailsCarma.
-
 ## Overview
 
 StreamFlix is a single-screen tvOS application that presents a media catalog organized into horizontal content carousels.
@@ -47,6 +45,7 @@ The application focuses on native tvOS interaction patterns, especially the Focu
 
 The project follows a lightweight Clean Architecture approach combined with MVVM.
 
+```
 Presentation
      │
      ▼
@@ -66,10 +65,11 @@ Data Service
      │
      ▼
 JSON
+```
 
+## Project Structure
 
-**Project Structure**
-
+```
 StreamFlix
 │
 ├── App
@@ -109,12 +109,13 @@ StreamFlix
     └── Components
         ├── LoadingView.swift
         └── ErrorView.swift
+```
 
+## Data Flow
 
-**Data Flow
-**
 The catalog data flows through the application as follows:
 
+```
 catalog.json
      │
      ▼
@@ -131,31 +132,32 @@ CatalogViewModel
      │
      ▼
 SwiftUI Views
+```
 
 The JSON response is decoded into DTOs and mapped into domain models before reaching the presentation layer.
 
 This keeps the UI independent of the underlying data source.
 
-**tvOS Focus Experience**
+## tvOS Focus Experience
 
 The application is designed specifically for the tvOS 10-foot UI experience.
 
 Media cards are implemented as focusable buttons and provide visual feedback when focused.
 
 Focused cards:
-Scale up slightly
-Display a visible focus border
-Display a subtle glow/shadow
-Animate smoothly during focus changes
+- Scale up slightly
+- Display a visible focus border
+- Display a subtle glow/shadow
+- Animate smoothly during focus changes
 
 The horizontal shelves use LazyHStack inside horizontal ScrollViews.
 
 The scroll views allow focused cards to extend beyond their normal bounds so the focus effect is not clipped.
 
-**Navigation**
+## Navigation
 
 The application follows this navigation flow:
-
+```
 Catalog
    │
    │ Select Media
@@ -165,31 +167,32 @@ Detail
    │ Play
    ▼
 Simulated Player
+```
 
 Native tvOS navigation behavior is used to provide a familiar remote-driven experience.
 
-**Loading & Error Handling
-**
+## Loading & Error Handling
 The catalog loading process is asynchronous and exposes three primary UI states:
 
+```
 Loading
    │
    ├── Success ──► Catalog
    │
    └── Failure ──► Error + Retry
+```
 
 The Retry action is implemented as a focusable tvOS button so it can be accessed using the remote.
 
-**Mock Data
-**
-The application uses the mock catalog JSON provided as part of the assessment.
+## Mock Data
+The application uses the mock catalog JSON.
 
 The data source is abstracted behind a service protocol so it can easily be replaced with a real REST API in a production environment.
 
-**Dependency Injection
-**
+## Dependency Injection
 Dependencies are created at the application composition level and injected into the ViewModel.
 
+```
 LocalCatalogAPIService
           │
           ▼
@@ -200,41 +203,41 @@ FetchCatalogUseCaseImpl
           │
           ▼
 CatalogViewModel
+```
 
 This keeps components loosely coupled and makes the ViewModel easier to test.
 
-**Requirements**
+## Requirements
+- Xcode
+- Swift
+- tvOS Simulator
+- macOS
 
-Xcode
-Swift
-tvOS Simulator
-macOS
-Running the Project
-Clone the repository.
-Open the Xcode project:
-StreamFlix.xcodeproj
-Select a tvOS Simulator.
-Build and run the application.
+## Running the Project
+- Clone the repository.
+- Open the Xcode project:
+- StreamFlix.xcodeproj
+- Select a tvOS Simulator.
+- Build and run the application.
 
 No external backend setup is required because the project uses the provided local mock JSON data.
 
-**Future Improvements
-**
+## Future Improvements
 If this application were extended into a production streaming platform, the following could be added:
 
-Real REST API integration
-Image caching
-Video playback using AVPlayer
-Persistent Continue Watching state
-Search
-Authentication
-Content pagination
-Network reachability handling
-Unit and UI tests
-Accessibility improvements
-Analytics and crash monitoring
+- Real REST API integration
+- Image caching
+- Video playback using AVPlayer
+- Persistent Continue Watching state
+- Search
+- Authentication
+- Content pagination
+- Network reachability handling
+- Unit and UI tests
+- Accessibility improvements
+- Analytics and crash monitoring
 
 
-**Author**
-Fayith Ahamed
-iOS Developer
+## Author
+- Fayith Ahamed
+- iOS Developer
