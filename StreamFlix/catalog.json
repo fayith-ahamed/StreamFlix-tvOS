@@ -1,0 +1,112 @@
+{
+  "categories": [
+    {
+      "id": "cat_1",
+      "title": "Trending Now",
+      "items": [
+        {
+          "id": "m1",
+          "title": "Cyber City",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m2",
+          "title": "Ocean Deep",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m3",
+          "title": "Neon Nights",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m4",
+          "title": "Final Horizon",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m5",
+          "title": "Shadow Protocol",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m6",
+          "title": "Lost Planet",
+          "imageUrl": "https://picsum.photos/400/225"
+        }
+      ]
+    },
+    {
+      "id": "cat_2",
+      "title": "Action Thrillers",
+      "items": [
+        {
+          "id": "m7",
+          "title": "Velocity",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m8",
+          "title": "Skybound",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m9",
+          "title": "Redline",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m10",
+          "title": "Blackout",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m11",
+          "title": "Dead Drop",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m12",
+          "title": "Aftershock",
+          "imageUrl": "https://picsum.photos/400/225"
+        }
+      ]
+    },
+    {
+      "id": "cat_3",
+      "title": "Continue Watching",
+      "items": [
+        {
+          "id": "m13",
+          "title": "Midnight Run",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m14",
+          "title": "The Last Signal",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m15",
+          "title": "Deep Space",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m16",
+          "title": "The Unknown",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m17",
+          "title": "Echo Point",
+          "imageUrl": "https://picsum.photos/400/225"
+        },
+        {
+          "id": "m18",
+          "title": "Last Mission",
+          "imageUrl": "https://picsum.photos/400/225"
+        }
+      ]
+    }
+  ]
+}
