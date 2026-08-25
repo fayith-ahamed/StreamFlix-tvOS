@@ -239,5 +239,4 @@ If this application were extended into a production streaming platform, the foll
 
 
 ## Author
-Fayith Ahamed
-iOS Developer
+Fayith Ahamed || iOS Developer
